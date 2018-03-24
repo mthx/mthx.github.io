@@ -6,7 +6,7 @@ date:   2018-03-24 15:48:33 +0000
 
 My team recently completed a project that integrated a Kubernetes workflow
 engine, [Argo](https://github.com/argoproj/argo). I've tried to summarise our
-usage at a high-level and record the various issues we encountered that are
+usage at a high level and record the various issues we encountered that are
 worth revisiting as the project evolves.
 
 We started using Argo in the v2.0.0-alpha3 timeframe and have shipped using
