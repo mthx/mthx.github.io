@@ -69,7 +69,7 @@ factors in selecting Argo.
 
 - We've ended up with a separate cluster for our Argo deployment vs other
   services, mostly because we couldn't resource limit Argo within a namespace
-  without it failing the workflows at submission time (whereas, cluster-wide
+  without it failing the workflows at submission time (whereas, cluster-wide,
   we'll just have temporarily unschedulable pods). Solutions in this area all
   look non-trivial, but we may have the opportunity to investigate further
   depending on the usage of the project. There's been helpful discussion from
