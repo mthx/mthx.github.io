@@ -83,7 +83,9 @@ factors in selecting Argo.
   using a Kubernetes CrobJob to delete them, but we still ended up manually
   cleaning up workflows and S3 data from ad hoc Argo use. Some kind of clean up
   seems likely to be essential for all users (at least of the Kubernetes
-  resources).
+  resources). We also hit and worked around a [Fabric8
+  bug](https://github.com/fabric8io/kubernetes-client/issues/1041) affecting
+  the cascading delete of pods.
 
 - It would be helpful to improve the accuracy of the "in-progress" status
   [issue 525](https://github.com/argoproj/argo/issues/525) covers this, though
