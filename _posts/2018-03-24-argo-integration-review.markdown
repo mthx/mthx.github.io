@@ -19,7 +19,8 @@ We implemented:
 * A workflow service that submits workflows, choosing from available workflows
   based on the domain model and setting global parameters based on user
   configuration. The service then watches the workflow and updates the domain
-  model service.
+  model service. We track the individual steps within the workflow, rather
+  than just caring about overall inputs/outputs.
 
 The workflows use global parameters, S3 for input artifacts and make heavy use
 of artifact passing. Otherwise we just use the core container / steps template
